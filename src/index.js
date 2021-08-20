@@ -14,8 +14,6 @@ inputEl.addEventListener('input', debounce(onSearch, 500));
 function onSearch(e) {
   e.preventDefault();
   clearCardContainer();
-  //работать не будет, т.к. стоит debounce()
-  //   const valInput = e.currentTarget.elements.query.value;
   const valInput = e.target.value.trim();
   fetchCountries(valInput).then(makeRender);
 }
