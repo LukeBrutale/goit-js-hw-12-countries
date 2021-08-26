@@ -1,6 +1,8 @@
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 
+
+
 const { error } = require('@pnotify/core');
 const pnotify = text => {
   const options = {

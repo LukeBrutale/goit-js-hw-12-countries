@@ -16,6 +16,10 @@ function onSearch(e) {
   clearCardContainer();
   const valInput = e.target.value.trim();
   fetchCountries(valInput).then(makeRender);
+
+  if (!valInput) {
+    console.log('please enter your country')
+  }
 }
 
 function makeRender(obj) {
